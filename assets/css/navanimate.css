@@ -22,7 +22,6 @@
     padding:10px 20px;
     line-height:1.2em;
     color:#fff;
-    border-left:1px solid #595959;
 }
 .nav a:hover {
     text-decoration:none;
@@ -30,21 +29,18 @@
 }
 .nav li ul {
     background:#273754; 
-    left:0;
-    top:36px;
+    top:38px;
     z-index:1;
     max-height:0;
     overflow:hidden;
     -webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
     -webkit-transform-origin:50% 0;
-    -webkit-transition:350ms;
-    -moz-transition:350ms;
-    -o-transition:350ms;
-    transition:350ms;
+    -webkit-transition:250ms;
+    -moz-transition:250ms;
+    -o-transition:250ms;
+    transition:250ms;
 }
-.nav li ul ol {
-    width:200px;
-}
+
 .nav li ul a {
     border:none;
 }
@@ -55,6 +51,5 @@
 .nav ul > li:hover ul {
     max-height:1000px;
     width: 200px;
-    margin-left: 0;
     -webkit-transform:perspective(400) rotate3d(0,0,0,0);
 }
