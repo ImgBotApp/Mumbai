@@ -2,7 +2,7 @@
 
 function myMap()
 	{
-		var mapOptions = {center: new google.maps.LatLng(19.1, 72.8),zoom: 10,mapTypeId: google.maps.MapTypeId.ROADMAP}
+		var mapOptions = {center: new google.maps.LatLng(19.1046072,73.0226508),zoom: 10,mapTypeId: google.maps.MapTypeId.ROADMAP}
 		var map = new google.maps.Map(document.getElementById("map"),mapOptions);
 	}
 
@@ -45,7 +45,7 @@ function myFunction() {
 
 
 
-// Sliding Images Homepage
+/* Sliding Images Homepage
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -87,4 +87,4 @@ function carousel() {
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 7000);    
-}
+} */
