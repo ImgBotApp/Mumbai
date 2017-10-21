@@ -1,0 +1,10 @@
+start
+enter current location
+select ride
+1.auto 2.cab 3.rental 4.sharing
+select destination
+ride now
+waiting
+				
+confirm booking		ride not avilable
+make payment			terminated
