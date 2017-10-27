@@ -5,8 +5,11 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/mum.css">
 		<!--/<link rel="stylesheet" type="text/css" href="assets/css/navanimate.css">-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<meta charset="UTF-8" name="description" content="Hotels in Mumbai">
+		<meta charset="UTF-8" name="description" content="Shopping Places in Mumbai">
+		<link rel="shortcut icon" href="assets/icons/shopping.ico" />
 		<title>Shopping Places in Mumbai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
 		<style>
 		
@@ -17,7 +20,15 @@
 				height: 250px;
 				width: 250px;
 			}
-		
+			/* For mobile view of navbar and footer */
+			@media screen and (max-width: 600px) {
+				.navbar {
+					width: 110%;
+				}
+				.footr {
+					width: 110%;
+				}
+			}
 		</style>
 
 	</head>
@@ -39,7 +50,7 @@
 					<a href="shopping.html" target="_blank"> <i class="material-icons md-18">shopping_cart</i>  SHOPPING</a>
 				</div>
 			</li>
-			<li><a href="#home"><i class="material-icons md-18 md-light">home</i>   HOME</a></li>
+			<li><a href="mumbai.html#home"><i class="material-icons md-18 md-light">home</i>   HOME</a></li>
 			<li class="left"><a href="mumbai.html">MUMBAI</a></li>
 		</ul>
 
@@ -149,7 +160,7 @@
 			</div><br>
 
 		<!-- Footer -->
-		<div style="background-color: #343a40; height: 100px"><br>
+		<div class="footr" style="background-color: #343a40; height: 100px"><br>
 			<p class="footer" style="color: white; text-align: center;">Copyright &copy; Mumbai 2017</p>
 		</div>
 
