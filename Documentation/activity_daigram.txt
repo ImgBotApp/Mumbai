@@ -1,0 +1,9 @@
+start
+select hotel
+enter the detail
+check availability
+available 		not-available
+book room		search for other hotel
+make payment		terminated
+yes 	no
+book C	terminated   

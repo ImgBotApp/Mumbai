@@ -1,0 +1,7 @@
+Navbar Animations
+
+https://www.newmediacampaigns.com/blog/nicer-navigation-with-css-transitions-part-2
+
+https://codepen.io/toddsynan/details/pJuyx
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform
