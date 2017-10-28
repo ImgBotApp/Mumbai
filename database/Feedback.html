@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Feedback</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" type="text/css" href="mum.css">
+		<style type="text/css">
+			body {
+				background-color: #e0e0e0;
+			}
+			.col-container {
+				padding-left: 400px;
+				padding-top: 15px;
+				padding-bottom: 20px;
+				padding-right: 200px;
+			}
+			input[type=submit] {
+			    background-color: #4286f4;
+			    color: white;
+			    padding: 10px;
+			    border: none;
+			    border-radius: 8px;
+			    cursor: pointer;
+			    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.4);
+			    transition: 0.3s;
+			}
+			input[type=submit]:hover {
+				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+				transition: 0.5s ease;
+			}
+			input[type=text], textarea {
+			    padding: 10px;
+			    border: none;
+			    border-radius: 8px;
+			    cursor: pointer;
+			    padding-right: 50px;
+			    vertical-align: top;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="col-container">
+			<form name="feedbackForm" method="post" action="feedbackFormProcess.php"><br><br>
+				<h1>Website Feedback</h1>
+				
+					<div class="col">
+						<h3>Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="text" name="Name" id="Name" placeholder="John Doe" maxlength="30" required></h3>
+					</div><br>
+					
+					<div class="col">
+						<h3>E-mail: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="text" name="Email" id="Email" placeholder="someone@example.com" maxlength="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required></h3>
+					</div><br>
+					
+					<div class="col" style="vertical-align: middle;">
+						<h3>Message: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<textarea type="text" name="message" id="message" placeholder="Write something.." rows="5" cols="40" required></textarea> </h3>
+					</div><br>
+
+					<div class="col">
+  						<input type="submit" value="Submit" id="submit">
+  					</div>
+			</form>
+		</div>
+	</body>
+</html>
