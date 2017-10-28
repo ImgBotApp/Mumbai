@@ -18,6 +18,48 @@
 					width: 110%;
 				}
 			}
+
+			/* For Tooltip on hover over images */
+			.gallery {
+			    position: relative;
+			    display: inline-block;
+			    border-bottom: 1px dotted black;
+			}
+
+			.gallery .tooltiptext {
+			    visibility: hidden;
+			    width: 200px;
+			    background-color: white;
+			    color: #000;
+			    text-align: center;
+			    border-radius: 6px;
+			    padding: 5px;
+			    position: absolute;
+			    z-index: 1;
+			    bottom: 103%;
+			    left: 50%;
+			    margin-left: -100px;
+			    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+			    opacity: 0;
+			    transition: opacity 1s;
+			}
+
+			.gallery .tooltiptext::after {
+			    content: "";
+			    position: absolute;
+			    top: 100%;
+			    left: 50%;
+			    margin-left: -5px;
+			    border-width: 5px;
+			    border-style: solid;
+			    border-color: white transparent transparent transparent;
+			}
+
+			.gallery:hover .tooltiptext {
+			    visibility: visible;
+			    opacity: 1;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			}
 		</style>
 
 	</head>
@@ -37,8 +79,8 @@
 					<a href="history.html" target="_blank"> <i class="material-icons md-18">event_note</i>  HISTORY</a>
 					<a href="#photos"> <i class="material-icons md-18">photo_library</i>  PHOTOS</a>
 					<a href="tourist.html" target="_blank"> <i class="material-icons md-18">local_activity</i>  TOURIST PLACES</a>
-					<a href="ht.html" target="_blank"> <i class="material-icons md-18">hotel</i>  HOTELS</a>
 					<a href="shopping.html" target="_blank"> <i class="material-icons md-18">shopping_cart</i>  SHOPPING</a>
+					<a href="ht.html" target="_blank"> <i class="material-icons md-18">hotel</i>  HOTELS</a>
 				</div>
 			</li>
 			<li><a href="mumbai.html#home"><i class="material-icons md-18 md-light">home</i>   HOME</a></li>
@@ -54,7 +96,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/local.png">
+				<span class="tooltiptext">Mumbai Locals are the Lifeline of Mumbai. It carries more than 7.5 million commuters daily</span>
+				<a target="_blank" href="assets/images/local.png">
 					<img src="assets/images/local.png" alt="Mumbai Local" width="80%" height="80%">
 				</a>
 				<div class="desc">Mumbai Local<br>PC: <a href="https://www.instagram.com/saideep.dicholkar/?hl=en" target="_blank">@saideep.dicholkar</a></div>
@@ -63,7 +106,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum1.png">
+				<span class="tooltiptext">The Dadar railway station (western & central) as well as the tracks between Dadar and Elphinstone Road-Parel stations are visible</span>
+				<a target="_blank" href="assets/images/mum1.png">
 					<img src="assets/images/mum1.png" alt="Cityscape" width="80%" height="80%">
 				</a>
 				<div class="desc">Cityscape<br>PC: <a href="https://www.instagram.com/towering_goals/?hl=en" target="_blank">@towering_goals</a></div>
@@ -72,7 +116,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum10.png">
+				<span class="tooltiptext">The Bandra Worli Sealink which connects Bandra & Worli makes it easy & saves time while travelling from South to Suburbs of Mumbai</span>
+				<a target="_blank" href="assets/images/mum10.png">
 					<img src="assets/images/mum10.png" alt="Bandra Worli Sealink" width="80%" height="80%">
 				</a>
 				<div class="desc">Bandra Worli Sealink<br>PC: <a href="https://www.instagram.com/grey.panda/" target="_blank">@grey.panda</a></div>
@@ -81,16 +126,18 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum3.png">
+				<span class="tooltiptext">Usual Traffic on roads of Mumbai</span>
+				<a target="_blank" href="assets/images/mum3.png">
 					<img src="assets/images/mum3.png" alt="Traffic" width="80%" height="80%">
 				</a>
-				<div class="desc">Traffic<br>PC: <a href="https://www.instagram.com/dhanashree.shah/" target="_blank">@dhanashree.shah</a></div>
+				<div class="desc">Traffic<br>PC: <a href="https://www.instagram.com/vinish.kpavithran/" target="_blank">@vinish.kpavithran</a></div>
 			</div>
 		</div>
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum3.png">
+				<span class="tooltiptext">Both, sea facing skyscrapers and small huts/slums may be divided on the basis of lifestyle and standard of living but there's one thing in common between them, and it is "The spirit of Mumbai "</span>
+				<a target="_blank" href="assets/images/mum3.png">
 					<img src="assets/images/mum4.png" alt="Shades of Mumbai" width="80%" height="80%">
 				</a>
 				<div class="desc">Shades of Mumbai<br>PC: <a href="https://www.instagram.com/riteshgaikwad/" target="_blank">@riteshgaikwad</a></div>
@@ -99,7 +146,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum12.png">
+				<span class="tooltiptext">The beautiful Night Skyline of Mumbai shining in its glory</span>
+				<a target="_blank" href="assets/images/mum12.png">
 					<img src="assets/images/mum12.png" alt="Night Skyline of Mumbai" width="80%" height="80%">
 				</a>
 				<div class="desc">Night Skyline of Mumbai<br>PC: <a href="https://www.instagram.com/rithiktodi/?hl=en" target="_blank">@rithiktodi</a></div>
@@ -108,7 +156,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum23.png">
+				<span class="tooltiptext">The Indian National Flag being waved on the occasion of Republic Day of India</span>
+				<a target="_blank" href="assets/images/mum23.png">
 					<img src="assets/images/mum23.png" alt="Indian Flag" width="80%" height="80%">
 				</a>
 				<div class="desc">Indian Flag<br>PC: <a href="https://www.instagram.com/p/BPtnanQBGnq/?taken-by=streets.of.mumbai&hl=en" target="_blank">@streets.of.mumbai</a></div>
@@ -117,8 +166,9 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum7.png">
-					<img src="assets/images/mum7.png" alt="ITC Grand Hotel" width="80%" height="80%">
+				<span class="tooltiptext">The ITC Grand Central Hotel located in central Mumbai reflects the rich heritage of the colonial past and modern times.</span>
+				<a target="_blank" href="assets/images/mum7.png">
+					<img src="assets/images/mum7.png" alt="ITC Grand Central Hotel" width="80%" height="80%">
 				</a>
 				<div class="desc">ITC Grand Hotel<br>PC: <a href="https://www.instagram.com/rashmimallya/" target="_blank">@rashmimallya</a></div>
 			</div>
@@ -126,7 +176,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum9.png">
+				<span class="tooltiptext">A piece of art "I Love Mumbai" placed at Bandstand, Bandra</span>
+				<a target="_blank" href="assets/images/mum9.png">
 					<img src="assets/images/mum9.png" alt="I Love Mumbai" width="80%" height="80%">
 				</a>
 				<div class="desc">I Love Mumbai<br>PC: <a href="https://www.instagram.com/darshanpatil_5006/" target="_blank">@darshanpatil_5006</a></div>
@@ -135,7 +186,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum13.png">
+				<span class="tooltiptext">The newly constructed T2 of Chhatrapati Shivaji Maharaj International Airport Mumbai</span>
+				<a target="_blank" href="assets/images/mum13.png">
 					<img src="assets/images/mum13.png" alt="T2" width="80%" height="80%">
 				</a>
 				<div class="desc">CSIA T2<br>PC: <a href="https://www.instagram.com/eyeclickstory/" target="_blank">@eyeclickstory</a></div>
@@ -144,7 +196,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum16.png">
+				<span class="tooltiptext">The Ariel view of Mumbai captured while flying over Mumbai</span>
+				<a target="_blank" href="assets/images/mum16.png">
 					<img src="assets/images/mum16.png" alt="Ariel View of Mumbai" width="80%" height="80%">
 				</a>
 				<div class="desc">Ariel View of Mumbai<br>PC: <a href="https://www.instagram.com/dhanashree.shah/" target="_blank">@dhanashree.shah</a></div>
@@ -153,7 +206,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum16.png">
+				<span class="tooltiptext">The Lifeline of Mumbai waiting for passengers to board the train at Andheri station</span>
+				<a target="_blank" href="assets/images/mum20.png">
 					<img src="assets/images/mum20.png" alt="Mumbai Locals" width="80%" height="80%">
 				</a>
 				<div class="desc">Mumbai Locals<br>PC: <a href="https://www.instagram.com/soham_kdm_05/" target="_blank">@soham_kdm_05</a></div>
@@ -162,7 +216,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum21.png">
+				<span class="tooltiptext">Dadar TT Flyover captured during night & areas of Dadar & Wadala are visible</span>
+				<a target="_blank" href="assets/images/mum21.png">
 					<img src="assets/images/mum21.png" alt="Dadar TT Flyover" width="80%" height="80%">
 				</a>
 				<div class="desc">Dadar TT Flyover<br>PC: <a href="https://www.instagram.com/ashwin.nagpal/" target="_blank">@ashwin.nagpal</a></div>
@@ -171,7 +226,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum24.png">
+				<span class="tooltiptext">The architectural beauty of Dr. Bhau Daji Lad Museum which has many historic arts of Mumbai</span>
+				<a target="_blank" href="assets/images/mum24.png">
 					<img src="assets/images/mum24.png" alt="Dr. Bhau Daji Lad Museum" width="80%" height="80%">
 				</a>
 				<div class="desc">Dr. Bhau Daji Lad Museum<br>PC: <a href="https://www.instagram.com/omkarkokamthankar/" target="_blank">@omkarkokamthankar</a></div>
@@ -180,7 +236,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum25.png">
+				<span class="tooltiptext">Mumbai Metro travelling towards its destiny</span>
+				<a target="_blank" href="assets/images/mum25.png">
 					<img src="assets/images/mum25.png" alt="Mumbai Metro" width="80%" height="80%">
 				</a>
 				<div class="desc">Mumbai Metro<br>PC: <a href="https://www.instagram.com/towering_goals/?hl=en" target="_blank">@towering_goals</a></div>
@@ -189,7 +246,8 @@
 
 		<div class="responsive">
 			<div class="gallery">
-				<a target="_blank" href="images/mum26.png">
+				<span class="tooltiptext">Juhu Beach</span>
+				<a target="_blank" href="assets/images/mum26.png">
 					<img src="assets/images/mum26.png" alt="Juhu Beach" width="80%" height="80%">
 				</a>
 				<div class="desc">Juhu Beach<br>PC: <a href="https://www.instagram.com/arnoldmathias/" target="_blank">@arnoldmathias</a></div>
