@@ -1,0 +1,41 @@
+/* For Tooltip on hover over images */
+.gallery {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.gallery .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: white;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 103%;
+    left: 50%;
+    margin-left: -100px;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.gallery .tooltiptext::after {
+	content: "";
+	position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.gallery:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
